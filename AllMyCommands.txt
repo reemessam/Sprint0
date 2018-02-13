@@ -1,0 +1,190 @@
+
+jack of all trade@jackofalltrade MINGW64 ~ (master)
+$ git clone --mirror https://github.com/reemessam/Sprint0.git
+Cloning into bare repository 'Sprint0.git'...
+warning: You appear to have cloned an empty repository.
+
+jack of all trade@jackofalltrade MINGW64 ~ (master)
+$ cd '/d/6th Semester/Software Engineering/PA/Sprint0'
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ ls
+section3.1.txt  section5.1.txt  secton1.1.txt  Sprint0.git/
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git add secton1.1.txt
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git add section3.1.txt
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git add section5.1.txt
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   section3.1.txt
+        new file:   section5.1.txt
+        new file:   secton1.1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Sprint0.git/
+
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ gti rm --cached section3.1.txt
+bash: gti: command not found
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git rm --cached section3.1.txt
+rm 'section3.1.txt'
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   section5.1.txt
+        new file:   secton1.1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Sprint0.git/
+        section3.1.txt
+
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git add section3.1.txt
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git commit -m"Adding 3 files"
+[master (root-commit) dc5277c] Adding 3 files
+ 3 files changed, 187 insertions(+)
+ create mode 100644 section3.1.txt
+ create mode 100644 section5.1.txt
+ create mode 100644 secton1.1.txt
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git push --set-upstream origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 8.01 KiB | 8.01 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/reemessam/Sprint0.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (master)
+$ git checkout -b ReadMe
+Switched to a new branch 'ReadMe'
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (ReadMe)
+$ echo "i.Project Title (sprint0)\n ii.Getting Started (3 files containing secti          ons from the book)\n iii.Author (Reem Essam 37-8875)\n iv.Acknowledgments(boo Ch          acon,Scott,and Ben Straub.Pro Git .Apress)">>README.md
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (ReadMe)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA          /Sprint0 (ReadMe)
+$ git branch
+* ReadMe
+  master
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git status
+On branch ReadMe
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Sprint0.git/
+
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git commit -m"adding README file"
+[ReadMe d53e1db] adding README file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git push
+fatal: The current branch ReadMe has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ReadMe
+
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git push --set-upstream origin ReadMe
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 427 bytes | 427.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/reemessam/Sprint0.git
+ * [new branch]      ReadMe -> ReadMe
+Branch 'ReadMe' set up to track remote branch 'ReadMe' from 'origin'.
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git checkout ReadMe
+Already on 'ReadMe'
+Your branch is up to date with 'origin/ReadMe'.
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (ReadMe)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git branch
+  ReadMe
+* master
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git merge ReadMe
+Updating dc5277c..d53e1db
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/reemessam/Sprint0.git
+   dc5277c..d53e1db  master -> master
+
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git add AllMyCommands.txt
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git commit -m"adding commands file"
+jack of all trade@jackofalltrade MINGW64 /d/6th Semester/Software Engineering/PA/Sprint0 (master)
+$ git push
